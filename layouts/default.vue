@@ -15,7 +15,7 @@ function getDayTime () {
       return EARLY_MORNING
     case (hourNow >= 12 && hourNow < 17):
       return AFTERNOON
-    case (hourNow >= 17 && hourNow < 5):
+    case (hourNow >= 17 || hourNow < 5):
       return EVENING
     default:
       return MORNING
@@ -70,7 +70,7 @@ export default {
       Working as a consultant for companies around the world.
     </p>
     <p class="paragraph">
-      I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="https://medium.com/@DamianDulisz">write</SpecialLink> on tech and <SpecialLink>speak</SpecialLink> at events. Also running the official <SpecialLink to="https://news.vuejs.org">Vue.js News</SpecialLink>.
+      I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="https://medium.com/@DamianDulisz">write</SpecialLink> on tech and speak at events. I’m also running the official <SpecialLink to="https://news.vuejs.org">Vue.js News</SpecialLink>.
     </p>
     <p class="paragraph">
       You can follow me on <SpecialLink to="https://twitter.com/DamianDulisz">Twitter</SpecialLink>.
