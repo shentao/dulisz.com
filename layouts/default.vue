@@ -65,12 +65,14 @@ export default {
     </h1>
     <h2 class="subtitle">
       I’m a JavaScript developer and
-      a <SpecialLink>Vue.js</SpecialLink> core team member.
-      Working as a consultant and trainer
-      for companies around the world.
+      a <SpecialLink to="https://vuejs.org/">Vue.js</SpecialLink> core team member.<br>
+      Working as a consultant for companies around the world.
     </h2>
     <p class="paragraph">
-      I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="https://medium.com/@DamianDulisz">write</SpecialLink> on tech and <SpecialLink>speak</SpecialLink> at events. In love with coffee.
+      I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="https://medium.com/@DamianDulisz">write</SpecialLink> on tech and <SpecialLink>speak</SpecialLink> at events. I also run the official <SpecialLink to="https://news.vuejs.org">Vue.js News</SpecialLink>.
+    </p>
+    <p class="paragraph">
+      You can follow me on <SpecialLink to="https://twitter.com/DamianDulisz">Twitter</SpecialLink>.
     </p>
     <!-- <transition
       name="resize"
@@ -80,9 +82,9 @@ export default {
     </transition> -->
     <a
       href="mailto:damian@dulisz.com"
-      class="paragraph mail-link flex"
+      class="paragraph mail-link"
     >
-      <span class="submit-arrow">↳</span> Talk to me.
+      ↳ Talk to me.
     </a>
     <p>Like my work? <SpecialLink to="https://www.buymeacoffee.com/DamianDulisz">Buy me a coffee</SpecialLink>.</p>
   </div>
@@ -160,7 +162,7 @@ body {
 }
 
 .mail-link {
-  display: flex;
+  display: inline-block;
   text-decoration: none;
   color: var(--text-color, #444a51);
 }
@@ -172,11 +174,5 @@ body {
 .resize-enter, .resize-leave-to {
   max-height: 0;
   opacity: 0;
-}
-
-.submit-arrow {
-  margin-top: 3px;
-  margin-right: 5px;
-  display: inline-block;
 }
 </style>
