@@ -64,10 +64,11 @@ export default {
       </Greeting> Damian here.
     </h1>
     <h2 class="subtitle">
-      I’m a JavaScript developer and
-      a <SpecialLink to="https://vuejs.org/">Vue.js</SpecialLink> core team member.<br>
-      Working as a consultant for companies around the world.
+      I’m a JavaScript developer and a <SpecialLink to="https://vuejs.org/">Vue.js</SpecialLink> core team member.<br>
     </h2>
+    <p class="paragraph">
+      Working as a consultant for companies around the world.
+    </p>
     <p class="paragraph">
       I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="https://medium.com/@DamianDulisz">write</SpecialLink> on tech and <SpecialLink>speak</SpecialLink> at events. I also run the official <SpecialLink to="https://news.vuejs.org">Vue.js News</SpecialLink>.
     </p>
