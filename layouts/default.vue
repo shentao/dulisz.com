@@ -136,7 +136,7 @@ body {
 .subtitle {
   font-size: 1.75rem;
   font-weight: 300;
-  line-height: 2.5rem;
+  line-height: 2.25rem;
   margin-bottom: 30px;
   max-width: 550px;
 }
