@@ -136,14 +136,14 @@ body {
 .subtitle {
   font-size: 1.75rem;
   font-weight: 300;
+  margin-bottom: 20px;
   line-height: 2.25rem;
-  margin-bottom: 30px;
   max-width: 550px;
 }
 
 .paragraph {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 750px;
 }
 
@@ -154,11 +154,13 @@ body {
 
   .subtitle {
     font-size: 2.25rem;
+    margin-bottom: 30px;
     line-height: 3rem;
   }
 
   .paragraph {
     font-size: 1.75rem;
+    margin-bottom: 30px;
   }
 }
 
