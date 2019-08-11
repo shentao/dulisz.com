@@ -33,7 +33,7 @@
       >
         ↳ Talk to me.
       </a>
-      <p class="paragraph paragraph-small">Like my work? <SpecialLink to="https://github.com/users/shentao/sponsorship">Support me on GitHub</SpecialLink>.</p>
+      <p class="paragraph paragraph-small">Like my work?<br/><SpecialLink to="https://github.com/users/shentao/sponsorship">Support me on GitHub</SpecialLink>.</p>
     </div>
   </Layout>
 </template>
@@ -95,11 +95,11 @@ export default {
 
 <style lang="scss">
 .container {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 100px);
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
   flex-direction: column;
   justify-content: center;
 
@@ -109,7 +109,7 @@ export default {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -118,18 +118,23 @@ export default {
   font-size: 1.4rem;
   font-weight: 300;
   margin-bottom: 20px;
+  margin-top: 0;
   line-height: 2.25rem;
   max-width: 550px;
 }
 
 .paragraph {
  	font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   max-width: 750px;
 }
 
 @media only screen and (min-width: 600px)  {
+  .container {
+    min-height: calc(100vh - 200px);
+  }
+
   .title {
     font-size: 2.4rem;
   }

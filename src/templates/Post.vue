@@ -11,7 +11,7 @@
 
     <div class="post content-box">
       <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image.src" />
+        <g-image alt="Cover image" v-if="$page.post.coverImage" :src="$page.post.coverImage" />
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
@@ -68,13 +68,14 @@ query Post ($path: String!) {
     }
     description
     content
-    cover_image (width: 860, blur: 10)
+    coverImage (width: 860, blur: 10)
   }
 }
 </page-query>
 
 <style lang="scss">
 .post-title {
+  // padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   padding: calc(var(--space) / 4) var(--space);
 }
 
