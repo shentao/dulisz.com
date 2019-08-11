@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'A Blog by Damian Dulisz',
-  siteDescription: 'Personal blog by Damian Dulisz about Vue.js, JavaScript and other tech.',
+  siteDescription: 'I’m a JavaScript developer and a Vue.js core team member. Working as a consultant and trainer for companies around the world. I build open-source, write on tech and speak at events. In love with coffee.',
 
   plugins: [
     {
@@ -15,12 +15,12 @@ module.exports = {
       options: {
         typeName: 'Post',
         path: 'content/posts/*.md',
-        route: '/:slug',
+        route: '/blog/:slug',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
-            route: '/tag/:id',
+            route: '/blog/tag/:id',
             create: true
           }
         }

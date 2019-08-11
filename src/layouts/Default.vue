@@ -3,10 +3,12 @@
 
     <header class="header">
       <div class="header__left">
-        <Logo v-if="showLogo" /> 
+        <Logo v-if="showLogo" />
       </div>
-      
-      <div class="header__right">        
+
+      <div class="header__right">
+        <g-link to="/">About</g-link>
+        <g-link to="/blog">Blog</g-link>
         <ToggleTheme />
       </div>
     </header>
@@ -15,7 +17,7 @@
       <slot/>
     </main>
 
-    <footer class="footer">
+    <footer v-if="showFooter" class="footer">
       <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
       <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
     </footer>
@@ -28,13 +30,20 @@ import Logo from '~/components/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
-  props: {
-    showLogo: { default: true }
-  },
   components: {
     Logo,
     ToggleTheme
-  }
+  },
+  props: {
+    showLogo: {
+      type: Boolean,
+      default: true
+    },
+    showFooter: {
+      type: Boolean,
+      default: true
+    }
+  },
 }
 </script>
 
@@ -47,6 +56,17 @@ export default {
   padding: 0 calc(var(--space) / 2);
   top:0;
   z-index: 10;
+
+  a {
+    font-size: 0.8rem;
+    margin-top: -5px;
+    margin-right: 20px;
+    color: var(--body-color);
+
+    &:hover {
+      color: var(--link-color);
+    }
+  }
 
   &__left,
   &__right {

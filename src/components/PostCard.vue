@@ -10,7 +10,7 @@
       <p class="post-card__description" v-html="post.description" />
 
       <PostMeta class="post-card__meta" :post="post" />
-      <PostTags class="post-card__tags" :post="post" />
+      <!-- <PostTags class="post-card__tags" :post="post" /> -->
     </div>
   </div>
 </template>

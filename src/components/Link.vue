@@ -1,6 +1,6 @@
 <template lang="html">
   <span>
-    <nuxt-link
+    <g-link
       v-if="isLocal"
       :to="to"
       class="link"
@@ -9,7 +9,7 @@
         <slot/>
       </span>
       <span class="underline"/>
-    </nuxt-link>
+    </g-link>
     <a
       v-else
       :href="to"
@@ -47,12 +47,13 @@ export default {
   display: inline-block;
   font-weight: 700;
   cursor: pointer;
-  color: var(--text-color, #444a51);
+  color: var(--body-color, #444a51);
 }
 
 .content {
   z-index: 10;
-  text-shadow: 0 3px var(--background-color, #ffffff), -2px 1px var(--background-color, #ffffff), 2px 1px var(--background-color, #ffffff);
+  color: var(--title-color);
+  text-shadow: 0 3px var(--bg-color, #ffffff), -2px 1px var(--bg-color, #ffffff), 2px 1px var(--bg-color, #ffffff);
 }
 
 .underline {
@@ -63,7 +64,7 @@ export default {
   width: 100%;
   border-radius: 10px;
   height: 5px;
-  background: var(--accent-color, #38c172);
+  background: var(--link-color, #38c172);
   opacity: 0.5;
   z-index: -1;
 }

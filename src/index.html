@@ -2,9 +2,30 @@
 <html ${htmlAttrs}>
   <head>
     ${head}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,700">
   </head>
   <body ${bodyAttrs}>
     <script>
+      const EARLY_MORNING = 'EARLY_MORNING'
+      const MORNING = 'MORNING'
+      const AFTERNOON = 'AFTERNOON'
+      const EVENING = 'EVENING'
+
+      function getDayTime () {
+        const hourNow = new Date(Date.now()).getHours()
+
+        switch (true) {
+          case (hourNow >= 5 && hourNow < 7):
+            return EARLY_MORNING
+          case (hourNow >= 12 && hourNow < 17):
+            return AFTERNOON
+          case (hourNow >= 17 || hourNow < 5):
+            return EVENING
+          default:
+            return MORNING
+        }
+      }
+
       // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
       (function() {
         window.__onThemeChange = function() {};
@@ -17,8 +38,14 @@
 
         var preferredTheme;
         try {
-          preferredTheme = localStorage.getItem('theme');
+          // preferredTheme = localStorage.getItem('theme');
         } catch (err) { }
+
+        if (!preferredTheme) {
+          preferredTheme = getDayTime() === EVENING
+            ? 'dark'
+            : 'light'
+        }
 
         window.__setPreferredTheme = function(newTheme) {
           setTheme(newTheme);

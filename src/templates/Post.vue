@@ -11,7 +11,7 @@
 
     <div class="post content-box">
       <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.coverImage" :src="$page.post.coverImage" />
+        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image.src" />
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
@@ -83,7 +83,6 @@ query Post ($path: String!) {
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * -1);
     margin-bottom: calc(var(--space) / 2);
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
