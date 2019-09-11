@@ -56,7 +56,7 @@ export default {
     WorkshopCard
   },
   metaInfo: {
-    title: 'Damian Dulisz – Vue.js Workshops'
+    title: 'Workshops'
   }
 }
 </script>

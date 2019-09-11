@@ -48,7 +48,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: 'Damian Dulisz – Blog'
+    title: 'Blog'
   }
 }
 </script>

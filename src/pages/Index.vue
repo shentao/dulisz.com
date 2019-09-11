@@ -72,26 +72,12 @@ function getDayTime () {
 export default {
   components: { SpecialLink, Greeting },
   metaInfo: {
-    title: 'Damian Dulisz'
+    title: 'About'
   },
   data () {
     return {
       dayTime: MORNING,
       language: 'en'
-    }
-  },
-  computed: {
-    theme () {
-      return EVENING === this.dayTime
-        ? { '--background-color': '#22292f', '--text-color': '#fff', '--accent-color': '#51d88a' }
-        : { '--background-color': '#fff', '--text-color': '#444a51', '--accent-color': '#38c172' }
-    }
-  },
-  watch: {
-    theme (theme) {
-      for (const property in theme) {
-        document.body.style.setProperty(property, theme[property])
-      }
     }
   },
   mounted () {

@@ -14,11 +14,11 @@
         </a>
         <div class="workshop-card__date">{{ workshop.date }}</div>
       </div>
-      <g-link :to="workshop.path" style="text-decoration: none;">
+      <a :href="workshop.eventUrl" style="text-decoration: none;" target="_blank">
         <h3 class="workshop-card__title">
           {{ workshop.title }}
         </h3>
-      </g-link>
+      </a>
       <div class="workshop-card__location">{{ workshop.location }}</div>
       <!-- <p class="workshop-card__description" v-html="workshop.description" /> -->
     </div>
