@@ -1,6 +1,6 @@
 ---
 title: Composing Components in Vue.js
-date: 2019-05-01
+date: 2019-09-11
 tags: ['Vue.js', 'Tips']
 canonical_url: false
 description: "Components are often most useful when they are reusable. This is often accomplished by creating a set of props that can alter the behaviour of the component. An example of that would be a button component that can accept a text prop that will then be displayed inside the button."
