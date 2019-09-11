@@ -31,7 +31,7 @@ const GREETINGS = {
   pl: {
     'EARLY_MORNING': 'Dzień dobry',
     'MORNING': 'Dzień dobry',
-    'AFTERNOON': 'Dzien dobry',
+    'AFTERNOON': 'Dzień dobry',
     'EVENING': 'Dobry wieczór'
   },
   de: {
