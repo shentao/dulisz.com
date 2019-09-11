@@ -16,6 +16,8 @@ body {
   --content-width: 860px;
   --header-height: 80px;
   --radius: 5px;
+	--box-shadow: 0 5px 20px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+	--box-shadow-hover: 0 15px 40px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
 }
 
 // Make  things smaller for mobile
@@ -39,4 +41,6 @@ body[data-theme="dark"] {
  	--body-color: #ced8de;
  	--title-color: #fff;
  	--link-color: #38c172;
+	--box-shadow: 0 0 20px -3px rgba(255,255,255,.3),0 4px 6px -2px rgba(255,255,255,.15);
+	--box-shadow-hover: 0 0 40px -3px rgba(255,255,255,.3),0 4px 6px -2px rgba(255,255,255,.15);
 }

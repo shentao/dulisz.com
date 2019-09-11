@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="post-title content-box">
+    <div class="content-box">
       <h1 class="post-title__text">
         {{ $page.post.title }}
       </h1>
@@ -19,10 +19,15 @@
       <div class="post__footer">
         <PostTags :post="$page.post" />
       </div>
-    </div>
-
-    <div class="post-comments">
-      <!-- Add comment widgets here -->
+      <div class="post-comments">
+        <a :href="discussUrl" target="_blank">
+          Discuss on Twitter
+        </a>
+        <span style="padding: 0 8px;">•</span>
+        <a :href="editUrl" target="_blank">
+          Edit on GitHub
+        </a>
+      </div>
     </div>
 
     <Author class="post-author" />
@@ -50,6 +55,16 @@ export default {
         }
       ]
     }
+  },
+  computed: {
+    discussUrl () {
+      return `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://dulisz.com${this.$page.post.path}`)}`
+    },
+    editUrl () {
+      const file = this.$page.post.path.slice(6, this.$page.post.path.length)
+      console.log(file);
+      return `https://github.com/shentao/dulisz.com/edit/master/content/posts/${file}.md`;
+    }
   }
 }
 </script>
@@ -68,17 +83,11 @@ query Post ($path: String!) {
     }
     description
     content
-    coverImage (width: 860, blur: 10)
   }
 }
 </page-query>
 
 <style lang="scss">
-.post-title {
-  // padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
-  padding: calc(var(--space) / 4) var(--space);
-}
-
 .post {
 
   &__header {
@@ -117,7 +126,12 @@ query Post ($path: String!) {
 }
 
 .post-comments {
-  padding: calc(var(--space) / 2);
+  margin-top: 2rem;
+
+  a {
+    font-weight: 700;
+    border-bottom: 1px solid var(--link-color)
+  }
 
   &:empty {
     display: none;

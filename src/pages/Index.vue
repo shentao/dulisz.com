@@ -1,6 +1,10 @@
 <template>
-  <Layout :show-logo="false" :show-footer="false">
-    <div class="container">
+  <Layout
+    :show-logo="false"
+    :show-footer="false"
+    :show-newsletter="false"
+  >
+    <div class="container content-box">
       <h1 class="title">
         <Greeting
           :day-time="dayTime"
@@ -16,7 +20,10 @@
         Working as a consultant for companies around the world.
       </p>
       <p class="paragraph">
-        I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="/blog">write</SpecialLink> on tech and speak at events. I’m also running the official <SpecialLink to="https://news.vuejs.org">Vue.js News</SpecialLink>.
+        I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="/blog">write</SpecialLink> on tech, speak at events and teach Vue.js <SpecialLink to="/workshops">workshops</SpecialLink>.<br/>
+      </p>
+      <p class="paragraph">
+        I’m also running the official <SpecialLink to="https://news.vuejs.org">Vue.js News</SpecialLink>.
       </p>
       <p class="paragraph">
         You can follow me on <SpecialLink to="https://twitter.com/DamianDulisz">Twitter</SpecialLink>.
@@ -64,6 +71,9 @@ function getDayTime () {
 
 export default {
   components: { SpecialLink, Greeting },
+  metaInfo: {
+    title: 'Damian Dulisz'
+  },
   data () {
     return {
       dayTime: MORNING,
@@ -96,10 +106,8 @@ export default {
 <style lang="scss">
 .container {
   min-height: calc(100vh - 100px);
-  max-width: 1200px;
   display: flex;
   margin: 0 auto;
-  padding: 0 20px;
   flex-direction: column;
   justify-content: center;
 

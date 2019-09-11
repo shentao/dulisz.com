@@ -25,6 +25,14 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Workshops',
+        path: 'content/workshops/*.md'
+      }
     }
   ],
 

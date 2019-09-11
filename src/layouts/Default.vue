@@ -9,6 +9,7 @@
       <div class="header__right">
         <g-link to="/">About</g-link>
         <g-link to="/blog">Blog</g-link>
+        <g-link to="/workshops">Workshops</g-link>
         <ToggleTheme />
       </div>
     </header>
@@ -17,9 +18,11 @@
       <slot/>
     </main>
 
+    <SignupForm v-if="showNewsletter"/>
     <footer v-if="showFooter" class="footer">
       <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
       <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
+      <span class="footer__links"><g-link to="/privacy"> Privacy Policy</g-link></span>
     </footer>
 
   </div>
@@ -28,11 +31,13 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
+import SignupForm from '~/components/SignupForm'
 
 export default {
   components: {
     Logo,
-    ToggleTheme
+    ToggleTheme,
+    SignupForm
   },
   props: {
     showLogo: {
@@ -40,6 +45,10 @@ export default {
       default: true
     },
     showFooter: {
+      type: Boolean,
+      default: true
+    },
+    showNewsletter: {
       type: Boolean,
       default: true
     }
