@@ -42,7 +42,7 @@
 export default {
   data () {
     return {
-      subscribed: localStorage ? localStorage.getItem('subscribed') : false
+      subscribed: false
     }
   },
   methods: {
@@ -52,6 +52,9 @@ export default {
         localStorage.setItem('subscribed', true)
       }, 200)
     }
+  },
+  mounted () {
+    this.subscribed = localStorage.getItem('subscribed') || false
   }
 }
 </script>
