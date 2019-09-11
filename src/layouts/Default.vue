@@ -20,7 +20,7 @@
 
     <SignupForm v-if="showNewsletter"/>
     <footer v-if="showFooter" class="footer">
-      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
+      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. Damian Dulisz</span>
       <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
       <span class="footer__links"><g-link to="/privacy"> Privacy Policy</g-link></span>
     </footer>
