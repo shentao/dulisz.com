@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <Author class="post-author" />
+    <Author class="post-author" :show-title="true" />
   </Layout>
 </template>
 
