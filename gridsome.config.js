@@ -33,6 +33,12 @@ module.exports = {
         typeName: 'Workshops',
         path: 'content/workshops/*.md'
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-78373326-6'
+      }
     }
   ],
 
