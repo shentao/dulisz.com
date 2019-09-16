@@ -56,12 +56,12 @@ export default {
         {
           key: 'og:title',
           name: 'og:title',
-          content: this.$page.post.title,
+          content: `${this.$page.post.title} by Damian Dulisz`,
         },
         {
           key: 'twitter:title',
           name: 'twitter:title',
-          content: this.$page.post.title,
+          content: `${this.$page.post.title} by Damian Dulisz`,
         },
         {
           key: 'og:description',
