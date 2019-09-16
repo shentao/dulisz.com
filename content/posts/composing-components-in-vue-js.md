@@ -3,7 +3,7 @@ title: Composing Components in Vue.js
 date: 2019-09-11
 tags: ['Vue.js', 'Tips']
 canonical_url: false
-description: "Components are often most useful when they are reusable. This is often accomplished by creating a set of props that can alter the behaviour of the component. An example of that would be a button component that can accept a text prop that will then be displayed inside the button."
+description: "Component Composition can be understood in two ways. Usually people think about composing a component using mixins (and soon composition functions thanks to the upcoming Composition API). However, what I would like to talk about is composition where we connect several components together to form a new one that combines the functionalities of the smaller components. But let’s start from the beginning – the why."
 
 ---
 
@@ -251,10 +251,14 @@ And that’s it! We have a fully functional dropdown component that we can easil
 
 <iframe src="https://codesandbox.io/embed/composing-components-blog-0sjpp?fontsize=14" title="composing-components-blog" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-## Summary
+## Wrap-up
 
 If this doesn’t sound overly exciting to you, that’s understandable – it was a rather basic example after all. However, I do believe that it shows some of the incredible potential that slots and especially scoped slots have. It also enables some really useful design patterns that we will explore in the upcoming articles.
 
 As a side-note though — I wouldn’t exactly recommend building everything this way. As powerful and fancy as it might seem, it can be completely unnecessary for solving simple problems, where going with props is just good enough. The important lesson here is to not get stuck in that approach where we only rely on endless configuration options (props), rather than being able to compose the required functionality out of reusable components. If you find yourself in such a that trap, take a step back and refactor.
 
 Keep in mind, that when you aim for building reusable components this way, their responsibilities are usually much more limited and thus their API contract is much cleaner. This makes it easier to test and reason about. It also forces us to think more about the architecture of things. Which is always a good thing.
+
+### tl;dr;
+
+> _More slots, less props._
