@@ -68,6 +68,21 @@ export default {
         content: 'Vue.js Workshops',
       },
       {
+        key: 'og:url',
+        name: 'og:url',
+        content: 'https://dulisz.com/workshops',
+      },
+      {
+        key: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        key: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@damiandulisz',
+      },
+      {
         key: 'twitter:title',
         name: 'twitter:title',
         content: 'Vue.js Workshops',

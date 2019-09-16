@@ -89,6 +89,21 @@ export default {
         content: 'Damian Dulisz',
       },
       {
+        key: 'og:url',
+        name: 'og:url',
+        content: 'https://dulisz.com/',
+      },
+      {
+        key: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        key: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@damiandulisz',
+      },
+      {
         key: 'og:description',
         name: 'og:description',
         content: 'Hi, I’m Damian and I’m a JavaScript developer and a Vue.js core team member.',

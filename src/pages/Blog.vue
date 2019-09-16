@@ -65,6 +65,21 @@ export default {
         content: 'Blog',
       },
       {
+        key: 'og:url',
+        name: 'og:url',
+        content: 'https://dulisz.com/blog',
+      },
+      {
+        key: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        key: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@damiandulisz',
+      },
+      {
         key: 'og:description',
         name: 'og:description',
         content: 'A blog about Vue.js by Damian Dulisz',

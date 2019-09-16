@@ -73,6 +73,21 @@ export default {
           name: 'twitter:description',
           content: this.$page.post.description,
         },
+        {
+          key: 'twitter:creator',
+          name: 'twitter:creator',
+          content: '@damiandulisz',
+        },
+        {
+          key: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary',
+        },
+        {
+          key: 'og:url',
+          name: 'og:url',
+          content: `https://dulisz.com${this.$page.post.path}`,
+        }
       ]
     }
   },
