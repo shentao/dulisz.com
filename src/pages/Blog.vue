@@ -48,7 +48,33 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: 'Blog'
+    title: 'Blog',
+    meta: [
+      {
+        name: 'description',
+        content: 'A blog about Vue.js by Damian Dulisz',
+      },
+      {
+        key: 'og:title',
+        name: 'og:title',
+        content: 'Blog',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Blog',
+      },
+      {
+        key: 'og:description',
+        name: 'og:description',
+        content: 'A blog about Vue.js by Damian Dulisz',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'A blog about Vue.js by Damian Dulisz',
+      },
+    ]
   }
 }
 </script>

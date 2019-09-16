@@ -52,7 +52,27 @@ export default {
         {
           name: 'description',
           content: this.$page.post.description
-        }
+        },
+        {
+          key: 'og:title',
+          name: 'og:title',
+          content: this.$page.post.title,
+        },
+        {
+          key: 'twitter:title',
+          name: 'twitter:title',
+          content: this.$page.post.title,
+        },
+        {
+          key: 'og:description',
+          name: 'og:description',
+          content: this.$page.post.description,
+        },
+        {
+          key: 'twitter:description',
+          name: 'twitter:description',
+          content: this.$page.post.description,
+        },
       ]
     }
   },

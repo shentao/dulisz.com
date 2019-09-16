@@ -6,7 +6,6 @@
 
 module.exports = {
   siteName: 'Damian Dulisz',
-  siteDescription: 'I’m a JavaScript developer and a Vue.js core team member. Working as a consultant and trainer for companies around the world. I build open-source, write on tech and speak at events. In love with coffee.',
 
   plugins: [
     {

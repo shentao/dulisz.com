@@ -56,7 +56,33 @@ export default {
     WorkshopCard
   },
   metaInfo: {
-    title: 'Workshops'
+    title: 'Vue.js Workshops',
+    meta: [
+      {
+        name: 'description',
+        content: 'Vue.js Workshops by Damian Dulisz'
+      },
+      {
+        key: 'og:title',
+        name: 'og:title',
+        content: 'Vue.js Workshops',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Vue.js Workshops',
+      },
+      {
+        key: 'og:description',
+        name: 'og:description',
+        content: 'Vue.js Workshops by Damian Dulisz',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Vue.js Workshops by Damian Dulisz',
+      },
+    ]
   }
 }
 </script>
