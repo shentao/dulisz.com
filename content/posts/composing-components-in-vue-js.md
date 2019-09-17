@@ -247,7 +247,7 @@ export default {
 </script>
 ```
 
-And that’s it! We have a fully functional dropdown component that we can easily reuse and use to compose entirely new components. For example, we could build a [select component](https://github.com/shentao/composing-components/blob/master/src/components/AppSelect.vue) on top of it. Or replace the `AppButton` with an `input` and make it into a searchable autocomplete component.
+And that’s it! We have a fully functional dropdown component that we can easily reuse and use to compose entirely new components. For example, we could build a [select component](https://github.com/shentao/composing-components/blob/master/src/components/AppSelect.vue) on top of it. Or replace the `BaseButton` with an `input` and make it into a searchable autocomplete component.
 
 <iframe src="https://codesandbox.io/embed/composing-components-blog-0sjpp?fontsize=14" title="composing-components-blog" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
