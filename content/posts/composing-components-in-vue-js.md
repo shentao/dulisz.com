@@ -204,7 +204,7 @@ Now that the slot receives the method `setIsOpen` that can control the BaseToolt
 
 What happens now is that when we click on the `BaseButton` we trigger the exposed `setIsOpen` method, which in turn changes the `isOpen` state of the `BaseTooltip`. We could also trigger it on focus/blur or wait for the user to press a key while focusing on the button, to open it. We got complete control over the tooltip.
 
-Lets add one last touch – the `[vue-global-events](https://github.com/shentao/vue-global-events)` library, that will handle the closing of the dropdown when the user clicks outside of the dropdown.
+Lets add one last touch – the [vue-global-events](https://github.com/shentao/vue-global-events) library, that will handle the closing of the dropdown when the user clicks outside of the dropdown.
 
 ```html
 <!-- BaseDropdown.vue -->
