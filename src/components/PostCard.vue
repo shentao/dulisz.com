@@ -4,12 +4,13 @@
       <!-- <g-image alt="Cover image" v-if="post.coverImage" class="post-card__image" :src="post.coverImage" /> -->
     </div>
     <div class="post-card__content">
-      <g-link :to="post.path" style="text-decoration: none;">
+      <g-link :aria-label="`view '${post.title}'`" :to="post.path" style="text-decoration: none;">
         <h2 class="post-card__title" v-html="post.title" />
       </g-link>
-      <p class="post-card__description" v-html="post.description" />
-
       <PostMeta class="post-card__meta" :post="post" />
+      <p class="post-card__description" v-html="post.description" />
+      <g-link :aria-label="`view '${post.title}'`" :to="post.path" class="post-card__read-more">Read →</g-link>
+
       <!-- <PostTags class="post-card__tags" :post="post" /> -->
     </div>
   </div>
@@ -52,6 +53,7 @@ export default {
 
   &__title {
     margin-top: 0;
+    margin-bottom: 0.5rem;
     text-decoration: none;
 
     &:hover {
@@ -74,6 +76,17 @@ export default {
     overflow: hidden;
     text-indent: -9999px;
     z-index: 0;
+  }
+
+  &__description {
+    margin-bottom: 0.5rem;
+  }
+
+  &__read-more {
+    display: inline-block;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+    font-weight: 700;
   }
 }
 </style>

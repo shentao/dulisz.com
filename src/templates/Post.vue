@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <Author class="post-author" />
+    <Author class="post-author" :show-title="true" />
   </Layout>
 </template>
 
@@ -52,6 +52,41 @@ export default {
         {
           name: 'description',
           content: this.$page.post.description
+        },
+        {
+          key: 'og:title',
+          name: 'og:title',
+          content: `${this.$page.post.title} by Damian Dulisz`,
+        },
+        {
+          key: 'twitter:title',
+          name: 'twitter:title',
+          content: `${this.$page.post.title} by Damian Dulisz`,
+        },
+        {
+          key: 'og:description',
+          name: 'og:description',
+          content: this.$page.post.description,
+        },
+        {
+          key: 'twitter:description',
+          name: 'twitter:description',
+          content: this.$page.post.description,
+        },
+        {
+          key: 'twitter:creator',
+          name: 'twitter:creator',
+          content: '@damiandulisz',
+        },
+        {
+          key: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary',
+        },
+        {
+          key: 'og:url',
+          name: 'og:url',
+          content: `https://dulisz.com${this.$page.post.path}`,
         }
       ]
     }

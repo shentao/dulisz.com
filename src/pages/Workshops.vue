@@ -56,7 +56,48 @@ export default {
     WorkshopCard
   },
   metaInfo: {
-    title: 'Workshops'
+    title: 'Vue.js Workshops',
+    meta: [
+      {
+        name: 'description',
+        content: 'Vue.js Workshops by Damian Dulisz'
+      },
+      {
+        key: 'og:title',
+        name: 'og:title',
+        content: 'Vue.js Workshops',
+      },
+      {
+        key: 'og:url',
+        name: 'og:url',
+        content: 'https://dulisz.com/workshops',
+      },
+      {
+        key: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        key: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@damiandulisz',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Vue.js Workshops',
+      },
+      {
+        key: 'og:description',
+        name: 'og:description',
+        content: 'Vue.js Workshops by Damian Dulisz',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Vue.js Workshops by Damian Dulisz',
+      },
+    ]
   }
 }
 </script>

@@ -1,7 +1,7 @@
 ---
 title: Ridiculously Reusable Components v3
 event: Frontend Connect
-eventUrl: https://frontend-con.io
+eventUrl: https://frontend-con.io/product/ridiculously-reusable-components/
 location: Warsaw, Poland
 date: 2019-11-25
 canonical_url: false
