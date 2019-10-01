@@ -39,7 +39,31 @@ const GREETINGS = {
     'MORNING': 'Guten Morgen',
     'AFTERNOON': 'Guten Tag',
     'EVENING': 'Guten Abend'
-  }
+  },
+  es: {
+    'EARLY_MORNING': 'Buenos días',
+    'MORNING': 'Buenos días',
+    'AFTERNOON': 'Buenas tardes',
+    'EVENING': 'Buena noches'
+  },
+  fr: {
+    'EARLY_MORNING': 'Bonjour',
+    'MORNING': 'Bonjour',
+    'AFTERNOON': 'Bonne après-midi',
+    'EVENING': 'Bonsoir'
+  },
+  it: {
+    'EARLY_MORNING': 'Buongiorno',
+    'MORNING': 'Buongiorno',
+    'AFTERNOON': 'Buon pomeriggio',
+    'EVENING': 'Buonasera'
+  },
+  de_CH: {
+    'EARLY_MORNING': 'Guete Morge',
+    'MORNING': 'Guete Morge',
+    'AFTERNOON': 'Guete Nami',
+    'EVENING': 'Guete Abe'
+  },
 }
 
 export default {
