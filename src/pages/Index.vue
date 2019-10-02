@@ -127,7 +127,6 @@ export default {
       this.language = navigator.language.substr(0, 2)
       //add support for swiss german
       let locale = navigator.language
-      console.log(locale)
       if(locale === 'de-CH') this.language = 'de_CH'
     }, 2000)
   },
