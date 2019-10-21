@@ -1,7 +1,7 @@
 ---
 title: Ridiculously Reusable Components v3
 event: VueConfTO 2019
-eventUrl: https://vuetoronto.com/
+eventUrl: https://vuetoronto.com/workshops
 location: Toronto, Canada
 date: 2019-11-10
 canonical_url: false
