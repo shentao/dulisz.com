@@ -147,7 +147,7 @@ It can now be used like this:
 How you
 <BaseTooltip>
   doing?
-  <div v-slot:content>
+  <div slot="content">
     It’s Joey!
   </div>
 </BaseTooltip>
@@ -195,9 +195,9 @@ Now that the slot receives the method `setIsOpen` that can control the BaseToolt
         <slot/>
       </BaseButton>
     </template>
-    <div v-slot:content>
+    <template v-slot:content>
       <slot name=“content” v-bind=“{ setIsOpen }”/>
-    </div>
+    </template>
   </BaseTooltip>
 </template>
 ```
@@ -217,9 +217,9 @@ Lets add one last touch – the [vue-global-events](https://github.com/shentao/v
         <slot/>
       </BaseButton>
     </template>
-    <div v-slot:content>
+    <template v-slot:content>
       <slot name=“content” v-bind=“{ setIsOpen }”/>
-    </div>
+    </template>
   </BaseTooltip>
 </template>
 
