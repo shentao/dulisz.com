@@ -8,12 +8,23 @@
         Looking for an efficient way to boost your Vue.js skills?<br/>
         Consider joining in one of my workshops where I share my experience and more in-depth insight into working with Vue.
       </p>
-      <h2 class="subtitle">
+      <h2 class="subtitle" v-if="upcomingWorkshops.length">
         Upcoming Workshops
       </h2>
     </div>
+    <template v-if="upcomingWorkshops.length">
+      <WorkshopCard
+        v-for="edge in upcomingWorkshops" :key="edge.node.id"
+        :workshop="edge.node"
+      />
+    </template>
+    <div class="content-box">
+      <h2 class="subtitle">
+        Past Workshops
+      </h2>
+    </div>
     <WorkshopCard
-      v-for="edge in $page.workshops.edges" :key="edge.node.id"
+      v-for="edge in pastWorkshops" :key="edge.node.id"
       :workshop="edge.node"
     />
     <div class="content-box">
@@ -54,6 +65,18 @@ import WorkshopCard from '~/components/WorkshopCard.vue'
 export default {
   components: {
     WorkshopCard
+  },
+  computed: {
+    upcomingWorkshops () {
+      return this.$page.workshops.edges.filter(edge => {
+        return new Date(edge.node.date).getTime() > new Date().getTime()
+      })
+    },
+    pastWorkshops () {
+      return this.$page.workshops.edges.filter(edge => {
+        return new Date(edge.node.date).getTime() < new Date().getTime()
+      })
+    }
   },
   metaInfo: {
     title: 'Vue.js Workshops',
