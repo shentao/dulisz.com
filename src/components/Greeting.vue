@@ -64,6 +64,48 @@ const GREETINGS = {
     'AFTERNOON': 'Guete Nami',
     'EVENING': 'Guete Abe'
   },
+  pt: {
+    'EARLY_MORNING': 'Bom dia',
+    'MORNING': 'Bom dia',
+    'AFTERNOON': 'Boa tarde',
+    'EVENING': 'Boa noite',
+  },
+  ja: {
+    'EARLY_MORNING': 'おはようございます',
+    'MORNING': 'おはようございます',
+    'AFTERNOON': 'こんにちは',
+    'EVENING': 'こんばんは'
+  },
+  zh: {
+    'EARLY_MORNING': '早上好',
+    'MORNING': '早上好',
+    'AFTERNOON': '下午好',
+    'EVENING': '晚上好'
+  },
+  ru: {
+    'EARLY_MORNING': 'доброе утро',
+    'MORNING': 'доброе утро',
+    'AFTERNOON': 'Добрый день',
+    'EVENING': 'Добрый вечер'
+  },
+  el: {
+    'EARLY_MORNING': 'Καλημέρα',
+    'MORNING': 'Καλημέρα',
+    'AFTERNOON': 'καλό απόγευμα',
+    'EVENING': 'Καλό απόγευμα'
+  },
+  ko: {
+    'EARLY_MORNING': '좋은 아침',
+    'MORNING': '좋은 아침',
+    'AFTERNOON': '안녕하세요',
+    'EVENING': '안녕하세요'
+  },
+  ar: {
+    'EARLY_MORNING': 'sabah alkhyr',
+    'MORNING': 'sabah alkhyr',
+    'AFTERNOON': "masa' alkhayr",
+    'EVENING': "masa' alkhayr"
+  }
 }
 
 export default {
