@@ -10,7 +10,6 @@
           :day-time="dayTime"
           :language="language"
         >
-          Good morning
         </Greeting> Damian here.
       </h1>
       <h2 class="subtitle">
@@ -118,7 +117,7 @@ export default {
   data () {
     return {
       dayTime: MORNING,
-      language: 'en'
+      language: navigator.language.substr(0, 2)
     }
   },
   mounted () {
