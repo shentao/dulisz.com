@@ -17,7 +17,7 @@
         I’m a JavaScript developer and a <SpecialLink to="https://vuejs.org/">Vue.js</SpecialLink> core team member.<br>
       </h2>
       <p class="paragraph">
-        Working as a consultant for companies around the world.
+        Currently the Director of Platform Engineering at <SpecialLink to="https://www.coursedog.com/">Coursedog</SpecialLink>.
       </p>
       <p class="paragraph">
         I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="/blog">write</SpecialLink> on tech, speak at events and teach Vue.js <SpecialLink to="/workshops">workshops</SpecialLink>.<br/>
