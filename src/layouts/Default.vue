@@ -23,6 +23,7 @@
       <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. Damian Dulisz</span>
       <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
       <span class="footer__links"><g-link to="/privacy"> Privacy Policy</g-link></span>
+      <a href="https://www.iubenda.com/privacy-policy/98128387/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a>
     </footer>
 
   </div>
