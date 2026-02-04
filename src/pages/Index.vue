@@ -17,13 +17,13 @@
         I’m a JavaScript developer and a <SpecialLink to="https://vuejs.org/">Vue.js</SpecialLink> core team emeriti.<br>
       </h2>
       <p class="paragraph">
-        Currently the Staff Engineer at <SpecialLink to="https://www.coursedog.com/">Coursedog</SpecialLink>.
+        Currently the Platform Engineering Manager at <SpecialLink to="https://www.coursedog.com/">Coursedog</SpecialLink>.
       </p>
       <p class="paragraph">
         I <SpecialLink to="https://github.com/shentao">build</SpecialLink> open-source, occasionaly <SpecialLink to="/blog">write</SpecialLink> on tech, speak at events and teach Vue.js <SpecialLink to="/workshops">workshops</SpecialLink>.<br/>
       </p>
       <p class="paragraph">
-        You can follow me on <SpecialLink to="https://twitter.com/DamianDulisz">Twitter</SpecialLink>.
+        You can find me on <SpecialLink to="https://www.linkedin.com/in/damiandulisz/">LinkedIn</SpecialLink>.
       </p>
       <!-- <transition
         name="resize"
