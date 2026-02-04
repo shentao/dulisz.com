@@ -3,9 +3,6 @@
   "description": "Damian Dulisz Homepage",
   "author": "Damian Dulisz",
   "private": true,
-  "engines": {
-    "node": "16.x"
-  },
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
